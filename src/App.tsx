@@ -1,9 +1,12 @@
+import { HomePage } from "./pages/HomePage"
 
 
 function App() {
- 
+
   return (
-   <div className="text-amber-300">Teste</div>
+    <div className="w-full">
+      <HomePage />
+    </div>
   )
 }
 
