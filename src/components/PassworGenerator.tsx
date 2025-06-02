@@ -3,10 +3,10 @@ import { CopySimple } from "phosphor-react";
 
 export function PassworGenerator() {
     return (
-        <main className="border-cyan-600 border-3 p-2 w-[600px]">
-            <h2 className="text-cyan-800 font-semibold text-lg">Personalize your Password</h2>
-            <div className="flex justify-center items-center gap-2">
-                <input type="text" className="border-cyan-600 border-3 w-[90%]" />
+        <main className="border-cyan-600 border-3 p-4 w-[600px]">
+            <h2 className="text-cyan-800 font-semibold text-lg mb-4">Personalize your Password</h2>
+            <div className="flex justify-center items-center gap-2 mb-2">
+                <input type="text" className="border-cyan-600 border-3 w-full rounded" />
                 <CopySimple size={30} />
             </div>
             <div>
@@ -25,21 +25,21 @@ export function PassworGenerator() {
                             type="checkbox"
                             className="bg-cyan-600"
                         />
-                        Lowercase letters
+                        Uppercase letters
                     </label>
                     <label className="flex justify-center gap-1">
                         <input
                             type="checkbox"
                             className="bg-cyan-600"
                         />
-                        Lowercase letters
+                        Numbers
                     </label>
                     <label className="flex justify-center gap-1">
                         <input
                             type="checkbox"
                             className="bg-cyan-600"
                         />
-                        Lowercase letters
+                        Symbols
                     </label>
                 </div>
             </div>
