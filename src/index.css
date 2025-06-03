@@ -7,8 +7,13 @@
 }
 
 body {
-    background-color: #D3D3D3;
+    background-color: #0891B2;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+h1 {
+    font-weight: 800;
+    font-style: italic;
 }
