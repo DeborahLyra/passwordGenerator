@@ -3,7 +3,7 @@ import animationData from '../assets/padlockAnimation.json'
 
 export function Navbar() {
   return (
-    <nav className="w-[600px] p-4 bg-white rounded-t-md">
+    <nav className="w-[400px] md:w-[600px] p-4 bg-white rounded-t-md">
       <Lottie
         options={{
           loop: true,

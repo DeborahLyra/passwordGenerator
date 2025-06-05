@@ -1,11 +1,12 @@
 import { ArrowsCounterClockwise, CopySimple } from "phosphor-react";
+import "@radix-ui/themes/styles.css";
 
 
 export function PasswordGenerator() {
 
 
     return (
-        <main className="bg-white p-4 w-[600px] rounded-b-md">
+        <main className="bg-white p-4 w-[400px] md:w-[600px] rounded-b-md">
 
             <h2 className="text-cyan-800 font-semibold text-lg mb-4">Personalize your Password</h2>
             <div className="flex justify-center items-center gap-2 mb-2">
@@ -16,6 +17,7 @@ export function PasswordGenerator() {
                 </div>
                 <CopySimple size={32} color="#0891b2" className="cursor-pointer" />
             </div>
+
             <div>
                 <p className="text-cyan-800 font-light">Char number</p>
                 <div>
