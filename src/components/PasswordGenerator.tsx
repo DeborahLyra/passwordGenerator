@@ -38,7 +38,7 @@ export function PasswordGenerator() {
                             <Slider.Range className="absolute bg-cyan-600 rounded-full h-full" />
                         </Slider.Track>
                         <Slider.Thumb
-                            className="block w-4 h-4 bg-white border-2 border-cyan-600 rounded-full shadow hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="block w-4 h-4 bg-white border-2 border-cyan-600 rounded-full shadow hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             aria-label="Volume"
                         />
                     </Slider.Root>
@@ -53,19 +53,19 @@ export function PasswordGenerator() {
                     <p className="text-cyan-800 font-light">What do you want to add in your password?</p>
                     <label className="flex justify-center gap-1">
                         <input type="checkbox" className="bg-cyan-600" />
-                        <span className="font-light">Lowercase letters</span>
+                        <span className="font-light text-slate-700">Lowercase letters</span>
                     </label>
                     <label className="flex justify-center gap-1">
                         <input type="checkbox" className="bg-cyan-600" />
-                        <span className="font-light">Uppercase letters</span>
+                        <span className="font-light text-slate-700">Uppercase letters</span>
                     </label>
                     <label className="flex justify-center gap-1">
                         <input type="checkbox" className="bg-cyan-600" />
-                        <span className="font-light">Numbers</span>
+                        <span className="font-light text-slate-700">Numbers</span>
                     </label>
                     <label className="flex justify-center gap-1">
                         <input type="checkbox" className="bg-cyan-600" />
-                        <span className="font-light">Symbols</span>
+                        <span className="font-light text-slate-700">Symbols</span>
                     </label>
                 </div>
             </div>
