@@ -2,7 +2,7 @@
 
 A web application that generates random passwords customized based on user preferences. Built with **React**, styled with **Tailwind CSS**, interactions powered by **Radix UI**, and notifications using **React Toastify**.
 
-![screenshot](./screenshot.png) 
+![screenshot](./public/screenshot.png) 
 
 ---
 
