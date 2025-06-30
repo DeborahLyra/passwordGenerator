@@ -3,23 +3,28 @@ import * as Slider from '@radix-ui/react-slider';
 import { useState } from "react";
 import { toast } from "react-toastify";
 
+type EventType = {
+    preventDefault: () => void;
+}
 
 export function PasswordGenerator() {
     // O motivo de precisar usar colchetes, como [5] 
     // em vez de apenas 5, é porque o componente Slider do Radix 
     // UI é multivalorado por padrão — ou seja, ele espera um array 
     // de números, mesmo que tenha apenas um valor (como [5] em vez de 5).
-    const [charNumber, setCharNumber] = useState([0])
+    const [charNumber, setCharNumber] = useState([4])
     const [includeLower, setIncludeLower] = useState(false);
     const [includeUpper, setIncludeUpper] = useState(false);
     const [includeNumber, setIncludeNumber] = useState(false);
     const [includeSymbol, setIncludeSymbol] = useState(false);
     const [password, setPassword] = useState('');
 
-    function generatePassword() {
-        if (charNumber[0] <= 0) {
-          return toast.info('Hey 👋!', {
+    function generatePassword(event: EventType) {
+        event.preventDefault()
+        if (charNumber[0] < 4) {
+          return toast.error('The password need to have over four char', {
             position: 'top-center',
+            className: 'p-0 w-[400px] border border-purple-600/40'
           });
         }
       
@@ -49,8 +54,10 @@ export function PasswordGenerator() {
         }
       
         if (charset === '') {
-          setPassword('Select at least one option');
-          return;
+            return toast.error('Select at least one option', {
+                position: 'top-center',
+                className: 'p-0 w-[400px] border border-purple-600/40'
+              });
         }
       
         let remainingLength = charNumber[0] - requiredChars.length;
@@ -65,7 +72,7 @@ export function PasswordGenerator() {
         setPassword(fullPassword);
       }
       
-      // Embaralha os caracteres da senha
+      // serve para embaralhar os caracteres da senha
       function shuffleString(str: string) {
         return str
           .split('')
@@ -87,7 +94,6 @@ export function PasswordGenerator() {
                         value={password}
                         readOnly
                     />
-
 
                     <ArrowsCounterClockwise
                         size={30}
