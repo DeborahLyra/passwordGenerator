@@ -2,8 +2,7 @@
 
 A web application that generates random passwords customized based on user preferences. Built with **React**, styled with **Tailwind CSS**, interactions powered by **Radix UI**, and notifications using **React Toastify**.
 
-![screenshot](./assets/screenshot.png) 
-
+Try it out: https://password-generator-mauve-kappa.vercel.app
 ---
 
 ## ✨ Features
